@@ -13,8 +13,13 @@ Bill_function(1000, 0.05)
 # Problem 2 part 2
 
 # creating function to predict doubling of Bill's Money
-#using rule of 70 for doubling
+
+# using rule of 70 for doubling
 
 
 def Bill_double(interest):
-    years = 70 / interest
+    years = 70 / (interest * 100)
+    print("It takes", round(years, 2), " years to double Bill's money.")
+
+
+Bill_double(.05)
