@@ -36,4 +36,13 @@ Jack_interest = .20
 
 # finding out if double
 
-print(70 / (Jack_interest * 100) >= 2 * Jack_principle)
+print(Jack_principle * (1 + Jack_interest/1) ** 6 >= 2 * Jack_principle)
+
+# problem 2 part 4: creating a list
+
+accounts_list = ["Bill", 1000, "Jack", 5000, "Amy", 6700, "Cindy",
+                 5699, "Harry", 6700]
+
+print(accounts_list)
+
+# creating dictonary out of list
