@@ -1,18 +1,23 @@
+"""This document is to track and calculate interest for customers of a bank.
+ We also wat to practice converting data into various data structures"""
+
 # problem 2.1
 
 # creating function to predict bill's 10 year wealth
 
-Bill_interest = 0.05
+BILL_INTEREST = 0.05
 
-Bill_principle = 1000
+BILL_PRINCIPLE = 1000
 
 
-def Bill_function(principle, interest):
+def bill_function(principle, interest):
+    """This function is to calculate bills interest in ten years, given any input
+of principle and interest"""
     total = principle * (1 + interest/1) ** 10
     print("Bill's total wealth is $", round(total, 2))
 
 
-Bill_function(Bill_principle, Bill_interest)
+bill_function(BILL_PRINCIPLE, BILL_INTEREST)
 
 # Problem 2.2
 
@@ -21,22 +26,24 @@ Bill_function(Bill_principle, Bill_interest)
 # using rule of 70 for doubling
 
 
-def Bill_double(interest):
+def bill_double(interest):
+    """this function is to calcuate the doubling time for bill's money given any
+interest amount"""
     years = 70 / (interest * 100)
     print("It takes", round(years, 2), " years to double Bill's money.")
 
 
-Bill_double(Bill_interest)
+bill_double(BILL_INTEREST)
 
 # problem 2.3
 
-Jack_principle = 5000
+JACK_PRINCIPLE = 5000
 
-Jack_interest = .20
+JACK_INTEREST = .20
 
 # finding out if double
 
-print(Jack_principle * (1 + Jack_interest/1) ** 6 >= 2 * Jack_principle)
+print(JACK_PRINCIPLE * (1 + JACK_INTEREST/1) ** 6 >= 2 * JACK_PRINCIPLE)
 
 # 2.4: creating a list
 
